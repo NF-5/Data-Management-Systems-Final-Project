@@ -6,6 +6,16 @@
   <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
+<script>
+    // Protect admin dashboard
+    const userRole = localStorage.getItem('userRole');
+    
+    if (!userRole || parseInt(userRole) !== 2) {
+        // Not an admin - redirect to homepage
+        alert('Access denied. Admin privileges required.');
+        window.location.href = '/index.html';
+    }
+    </script>
   <div class="app">
     <!-- Sidebar -->
     <aside class="sidebar">
