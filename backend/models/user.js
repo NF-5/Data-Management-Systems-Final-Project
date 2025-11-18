@@ -5,7 +5,7 @@ const mysql = require('mysql2/promise');
 const dbConfig = {
   host: '127.0.0.1',
   user: 'root',
-  password: 'Joseph2005##',
+  password: '',
   database: 'retail_store',
   waitForConnections: true,
   connectionLimit: 10,
