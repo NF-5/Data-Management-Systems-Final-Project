@@ -4,8 +4,8 @@ const mysql = require('mysql2/promise');
 const dbConfig = {
   host: 'localhost',
   user: 'root',
-  password: 'Joseph2005##',  // Update with your MySQL password
-  database: 'shopease'  // Update with your database name
+  password: '',  // Update with your MySQL password
+  database: 'retail_store'  // Update with your database name
 };
 
 async function hashAllPasswords() {
